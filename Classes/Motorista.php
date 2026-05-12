@@ -22,7 +22,11 @@
         }
 
         public function setCpf(string $novoCpf) : void {
-            $this->cpf = $novoCpf;
+            if(strLen($novoCpf) != 11) {
+                echo "CPF Invalido!";
+            } else {
+                $this->cpf = $novoCpf;
+            }
         }
 
         public function getCpf() : string {
