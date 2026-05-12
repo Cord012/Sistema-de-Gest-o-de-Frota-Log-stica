@@ -1,6 +1,8 @@
 <?php
-declare (strict_types= 1);
-class Viagem{
+
+declare(strict_types=1);
+class Viagem
+{
     public function __construct(private string $destino, private float $distanciaTotal, private Motorista $motorista, private Veiculo $veiculo) {}
 
     public function getDestino(): string
